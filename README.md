@@ -27,3 +27,8 @@ This README would normally document whatever steps are necessary to get your app
 
 * Repo owner or admin
 * Other community or team contact
+
+
+
+README:
+python3 CS583_MSApriori_v0.8.py -i inputdata3.txt -p parameters3.txt -o text_piazza_input3_3.txt
