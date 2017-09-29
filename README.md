@@ -12,8 +12,8 @@ The Msapriori algorithm works in two steps:
 
 ## Getting Started:
 
-### Prerequisites-
-	Python >3.6 must be installed.
+### Prerequisites:
+Python >3.6 must be installed.
 
 ### Testing and Running:
 ```
@@ -25,7 +25,7 @@ python3 CS583_MSApriori_v0.8.py -i inputdata3.txt -p parameters3.txt -o text_pia
 •	4. to save the out put file- o output.txt
 
 ### Implementation Notes:
-1.	In output.txt file, Tailcount for any listed frequent k-itemset is the count of that individual item which has maximum MIS.
+In output.txt file, Tailcount for any listed frequent k-itemset is the count of that individual item which has maximum MIS.
 
 
 
