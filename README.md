@@ -2,14 +2,14 @@
 
 ## Group Memebers:
   1.	Ahmed Metwally (UIN: 678120810)  
-  2.	Vishal Bansal (UIN 669773290)  
+  2.	Vishal Bansal (UIN: 669773290)  
 
 ## Description:
 	
 The Msapriori algorithm works in two steps:
 
 1.	Generate all frequent item sets; A frequent itemset is an itemset that has transaction support above MIS(minimum item support).  
-2.	Eliminate the items that do not fulfil the given constraints like SDC, Cannot-be-together and Must-have. 
+2.	Eliminate the items that do not fulfil the given constraints like SDC, cannot-be-together, and must-have. 
 
 ## Getting Started:
 
