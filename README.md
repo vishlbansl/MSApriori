@@ -16,7 +16,14 @@ The Msapriori algorithm works in two steps:
 ### Prerequisites:
 * Python >3.6 must be installed.
 
-### Testing and Running:
+### Installing, Testing and Running:
+
+Clone the project to your local repository:
+```
+git clone git@bitbucket.org:ametwally/msapriori.git
+```
+
+To execute the program from command line, use:
 ```
 python3 ahmed_vishal.py -i <input-file.txt> -p <parameters-file.txt> -o <output-filet.txt>
 ```
