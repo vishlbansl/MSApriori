@@ -34,4 +34,4 @@ python3 ahmed_vishal.py -i data/inputdata3.txt -p data/parameters3.txt -o test.t
 ```
 
 ### Implementation Notes:
-In output.txt file, Tailcount for any listed frequent k-itemset is the count of that individual item which has maximum MIS.
+* In the outputfile, the Tailcount for any listed frequent k-itemset is the count of the individual item which has the highest MIS.
