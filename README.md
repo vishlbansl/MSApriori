@@ -1,4 +1,4 @@
-# IMPLEMENTATION OF MSAPRIORI ALGORITHM (EXCLUDING RULE GENERATION) 
+# Implementation of MSApriori Algorithm (Excluding rule generation) 
 
 ## Group Memebers:
   1.	Ahmed Metwally (UIN: 678120810)  
