@@ -24,7 +24,8 @@ def readParamFile(paramFile):
     "Read the parameter file"
     param = OrderedDict()
     sdc = 0
-
+    cannot = ""
+    must = ""
     file_iter = open(paramFile, 'r')
     for line in file_iter:
         line = line.replace(" ", "")
@@ -231,15 +232,18 @@ def MSApriori (fileData, parameters, sdc, cannot, must):
 
 
     ### Check constrains
-    m = []
-    for i in must:
-        m.append(set(i.split()))
+    if must != "":
+        m = []
+        for i in must:
+            m.append(set(i.split()))
 
-    remain = []
-    for i in F_local:
-        if i in m:
-            remain.append(i)
-    F[1] = remain
+        remain = []
+        for i in F_local:
+            if i in m:
+                remain.append(i)
+        F[1] = remain
+    else:
+        F[1] = F_local
 
 
 
@@ -269,18 +273,22 @@ def MSApriori (fileData, parameters, sdc, cannot, must):
 
 
         ##### Check constrains
-        remain = []
-        for i in F_local:
-            trigger = 0
-            for j in cannot:
-                if j.issubset(i):
-                    trigger = 1
-                    break
-            if trigger == 0:
-                remain.append(i)
+        if cannot != "":
+            remain = []
+            for i in F_local:
+                trigger = 0
+                for j in cannot:
+                    if j.issubset(i):
+                        trigger = 1
+                        break
+                if trigger == 0:
+                    remain.append(i)
 
-        ## Save the k-frequent itemset
-        F[k] = remain
+            ## Save the k-frequent itemset
+            F[k] = remain
+        else:
+            F[k] = F_local
+
         k+=1
 
 
